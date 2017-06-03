@@ -1,0 +1,453 @@
+/* ----------------- */
+
+.colorred {
+    background-color: #D80000;
+    color: white;
+}
+
+.panel.disabled .panel-body {
+    position: relative;
+}
+
+.panel.disabled .panel-body:after,
+.panel.disabled .panel-disabled {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+.panel-footer .checkbox {
+    margin: 0;
+}
+
+
+/* =========== cource ============= */
+
+.cource-box .cource-text {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.25);
+    float: left;
+    margin-bottom: 30px;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.cource-box .cource-text h4 {
+    margin-bottom: 20px;
+}
+
+.cource-box .cource-text h4 a {
+    color: #000;
+}
+
+.cource-box .cource-text h4 span {
+    color: #dc8e1f;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cource-box .cource-text p {
+    margin-bottom: 25px;
+}
+
+.cource-box .cource-text span.posted-on {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cource-box .cource-text span.comment,
+.cource-box .cource-text span.comment a {
+    float: right;
+    color: #c6801c;
+}
+
+.cource-box .cource-text span i {
+    font-size: 14px;
+    color: #c6801c;
+}
+
+
+/* =========== Parallax and Textures ============= */
+
+.bg-parallax {
+    background: url(../images/img-bg-2.jpg) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    padding: 100px 0;
+    position: relative;
+}
+
+.bg-parallax .overlay {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+
+/* =========== Projects ============= */
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.projects>a {
+    display: block;
+    color: #000;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.projects>a img {
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.projects>a:after {
+    opacity: 0;
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-box-shadow: inset 0px -34px 98px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -34px 98px 8px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: inset 0px -34px 98px 8px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: inset 0px -34px 98px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -34px 98px 8px rgba(0, 0, 0, 0.75);
+    z-index: 8;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.projects>a h3,
+.projects>a span {
+    z-index: 12;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 50px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    font-size: 30px;
+    font-weight: 300;
+    visibility: visible;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.projects>a span {
+    font-size: 14px;
+    bottom: 20px;
+}
+
+.projects>a:hover {
+    -webkit-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+}
+
+.projects>a:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.projects>a:hover h3,
+.projects>a:hover span {
+    opacity: 1;
+    bottom: 55px;
+}
+
+.projects>a:hover span {
+    bottom: 15px;
+}
+
+.projects>a:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* =========== Team ============= */
+
+.staff {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.staff img {
+    margin-bottom: 20px;
+}
+
+.staff h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.staff p {
+    margin-bottom: 30px;
+}
+
+.staff .role {
+    color: gray;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+/* =========== blog ============= */
+
+.widget h5 {
+    font-size: 25px;
+}
+
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.comment-list {
+    margin-bottom: 25px;
+}
+
+.cat-title {
+    background: #1bb4b9 none repeat scroll 0 0;
+    color: #fff;
+    padding: 20px;
+}
+
+.cat-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cat-list ul li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #dddddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 15px 20px;
+}
+
+.cat-list ul li a {
+    color: #656565;
+}
+
+.cat-list ul li a:hover {
+    color: #f5b120;
+}
+
+.c-post-img {
+    float: left;
+    height: 72px;
+    position: relative;
+    width: 68px;
+}
+
+.c-post-content {
+    padding-left: 80px;
+}
+
+.c-post {
+    border-bottom: 0 solid #3d3d3d;
+    margin-bottom: 25px;
+}
+
+.c-post-title a {
+    color: #3ba7d0;
+}
+
+.c-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.c-post.one {
+    border-bottom: 1px solid #dddddd;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+
+.pro-list h2 {
+    border-bottom: 1px solid #dddddd;
+    margin: 0 0 30px;
+    padding-bottom: 10px;
+}
+
+.pro-list .product-desc {
+    float: left;
+    width: 100%;
+}
+
+.tags-s {
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    color: #727272;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 8px 15px;
+    font-size: 13px;
+}
+
+.tags-s:hover {
+    background: #000 none repeat scroll 0 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 8px 15px;
+}
+
+.pagenation-blog {
+    text-align: center;
+}
+
+ul.pagenation-list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.pagenation-list>li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+ul.pagenation-list li a {
+    background-color: #e4e4e4;
+    border-radius: 100%;
+    color: #161616;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 35px;
+}
+
+ul.pagenation-list li a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+ul.address-info {
+    padding: 0;
+    margin: 0;
+}
+
+ul.address-info li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.widget .course-details>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widget .course-details>ul>li.course-price {
+    font-size: 18px;
+    min-height: 45px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.widget .course-details>ul>li.course-price>strong {
+    color: #dc8e1f;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.widget .course-details li {
+    font-size: 15px;
+    padding: 6px 0;
+    position: relative;
+    font-weight: bold;
+}
+
+.course-details li i {
+    float: right;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1;
+    margin-right: 10px;
+}
+
+.btn.btn-small {
+    background-color: #30babe;
+    border-radius: 30pxpx;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.colorblue {
+    background-color: #3ba7d0;
+    color: #fff;
+}
+
+.bottom_buttom {
+    margin-bottom: 100px;
+}
+
+
+/* my code */
+
+.box-masonry img {
+    width: 100%;
+    height: 165px;
+}
+
+.image_box img {
+    width: 100%;
+    height: 200px;
+}
+
+.box-masonry-text {
+    width: 100%;
+    height: 188px;
+    overflow: hidden;
+}
+
+.orange {
+    background: orange;
+}

@@ -1,0 +1,704 @@
+
+/* ----------- GENERAL ----------- */
+
+/* COLORS
+* primary blue 	#0064B4
+* light blue 	#7FCAD3
+* dark blue 	#008C95
+* red 			#CF0039
+* yellow 		#F18A00
+ */
+
+body {
+	background-color: #7FCAD3;
+}
+
+* {
+	font-family: Asun;
+}
+
+.page_title {
+	color: white;
+	font-family: Atall;
+	font-size: 2.5em;
+	margin: 50px 0;
+}
+
+/* ----------- HEADER ----------- */
+
+.nav_div {
+	position: relative;
+	min-height: 50px;
+	background-color: white;
+	margin-bottom: 25px;
+}
+
+.logo_img {
+	position: absolute;
+	height: 52px;
+	width: 52px;
+	margin: 0;
+	top: 0;
+	transition: all .5s;
+}
+
+.logo_img:hover {
+	transform: rotateY(180deg);
+	transition: all .5s;
+}
+
+.nav_elements {
+	display: block;
+	margin: auto;
+	text-align: right;
+}
+
+.nav_div .nav_elements a {
+	display: inline-block;
+	color: #CF0039;
+	text-decoration: none;
+	padding: 15px 0 15px 30px;
+	font-family: Aregular;
+	transition: all .5s;
+}
+
+.nav_div .nav_elements a:hover {
+	color: #0064B4;
+	transition: all .5s;
+}
+
+.nav_div .nav_elements a.active_nav {
+	color: #0064B4;
+}
+
+/* ----------- HOMEPAGE ----------- */
+
+.video_container {
+	font-size: 0px;
+}
+
+video {
+	width: 100%;
+}
+
+.title_container {
+	width: 100%;
+	padding: 50px;
+	padding-left: 20%;
+	margin-top: -5px;
+	margin-bottom: 75px;
+	background-color: #CF0039;
+}
+
+.title_div {
+	padding-left: 15px;
+	border-left: 3px solid white;
+}
+
+.title_div h1, .title_div h2 {
+	color: white;
+	margin: 0;
+}
+
+.title_div h1 {
+	font-size: 5em;
+	font-family: "Atall";
+}
+
+.title_div h2 {
+	font-size: 1.5em;
+	font-family: "Asmall";
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+
+.game_container {
+	width: 100%;
+	padding: 0;
+	margin-bottom: 75px;
+	background-color: #CF0039;
+	transition: all .5s;
+}
+
+.game_container:hover {
+	background-color: #F18A00;
+	transition: all .5s;
+}
+
+.game_container img {
+	min-width: 100%;
+	height: 300px;
+}
+
+.content_container {
+	height: 450px;
+	width: calc(50% - 12.5px);
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 75px;
+	background-color: white;
+	transition: all .5s;
+}
+
+.left_container {
+	margin-right: 25px;
+}
+
+.img_div {
+	width: 100%;
+	overflow: hidden;
+}
+
+.content_container a, .game_container a {
+	color: #CF0039;
+	text-decoration: none;
+}
+
+.content_container img {
+	height: 250px;
+	width: auto;
+}
+
+.text_div {
+	height: 200px;
+	padding: 40px;
+	overflow: hidden;
+	border-top: 0;
+}
+
+.content_container h3 {
+	font-family: Aregular;
+	border-bottom: 2px solid #CF0039;
+	margin: 0;
+	margin-bottom: 15px;
+	padding-bottom: 2px;
+}
+
+.game_container a h3 {
+	border-bottom: 2px solid white;
+}
+
+.content_container p, .game_container p {
+	font-family: Asun;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+.game_container a h3, .game_container p {
+	color: white;
+}
+
+.game_container a h3 {
+	border-bottom: 2px solid white;
+	transition: all .2s;
+}
+
+.content_container:hover h3, .content_container:hover p {
+	color: #0064B4;
+	transition: all .2s;
+}
+
+.content_container:hover h3 {
+	border-bottom: 2px solid #0064B4;
+	transition: all .2s;
+}
+
+/* ----------- NIEUWS ----------- */
+
+.box-masonry {
+	overflow: hidden;
+}
+
+.img-responsive {
+	min-height: 100px;
+	width: auto;
+}
+
+.box-masonry-image {
+	height: 100px !important;
+	overflow: hidden !important;
+}
+
+.box-masonry img {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* ----------- ERVARINGEN ----------- */
+
+.erv_title {
+	margin-left: -15px !important;
+}
+
+.img_erv {
+	min-height: 200px !important;
+	width: 100% !important;
+	overflow: hidden !important;
+}
+
+.img_erv img {
+	width: 100%;
+	height: auto;
+}
+
+/* ----------- OPLEIDINGEN ----------- */
+
+.refine_search {
+	background-color: #008C95;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	padding: 50px;
+}
+
+.refine_search h3 {
+	color: white;
+	font-family: atall;
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding: 5px;
+	border-bottom: 2px solid white;
+}
+
+.search_form {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.search_form .awesomplete, #srch_btn {
+	padding: 10px 0;
+	font-size: 16px;
+	border: 0;
+}
+
+.search_form .awesomplete {
+	width: 100%;
+	display: inline;
+	color: #008C95;
+	padding-left: 5px;
+	margin-left: -2px;
+}
+
+.refine_search h4 {
+	font-family: Aregular;
+	color: white;
+	margin-top: 25px;
+}
+
+.opleiding_form input[type=checkbox] {
+	display: none;
+}
+
+.opleiding_form input[type=checkbox]:checked + label {
+	background-color: #CF0039;
+	color: white;
+	transition: all .5s;
+}
+
+.opleiding_form button, .opleiding_form .butt {
+	background-color: #008C95;
+	margin-bottom: 5px;
+	padding: 15px;
+	color: white;
+	border: 1px solid #7FCAD3;
+	transition: all .5s;
+}
+
+.opleiding_form button:hover, .opleiding_form .butt:hover {
+	background-color: #CF0039;
+	color: white;
+	transition: all .5s;
+}
+
+.opleiding_form .active {
+	background-color: #CF0039;
+	color: white;
+	transition: all .5s;
+}
+
+.opleiding_form button {
+	min-width: 25%;
+	margin-top: 25px;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #7FCAD3;
+	border-color: #7FCAD3;
+	color: white;
+	font-family: asmall;
+}
+
+.opleiding_form button span {
+	margin-right: 10px;
+}
+
+.school-list {
+	background-color: #008C95;
+	color: white;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+}
+
+.school-list table {
+	width: 100%;
+}
+
+.school-list .mobile_screen {
+	display: none;
+}
+
+.school-list tr,
+.school-list td {
+    padding: 25px 50px;
+    color: white;
+    width: 49.5%
+}
+
+.school-list tr {
+    border-bottom: solid 1px #7FCAD3;
+	transition: all .5s;
+}
+
+.school-list tr:hover {
+    background-color: rgba(247, 146, 57, 1) !important;
+	transition: all .5s;
+}
+
+.search-form {
+    margin-bottom: 2em;
+}
+
+.link_div div {
+	text-align: right;
+}
+
+.onderwijs_link {
+	text-decoration: none;
+	font-family: Asmall;
+	margin: 20px 0 0 0;
+	display: inline-block;
+	text-align: right;
+	color: white;
+}
+
+.onderwijs_link:hover {
+	text-decoration: none;
+	color: #7FCAD3;
+}
+
+/* ----------- GAME ----------- */
+
+.content_container.game_img_div, .content_container.game_text_div {
+	width: calc(50% - 13px);
+}
+
+.right_container {
+    margin-left: 25px;
+}
+
+.deletable_div {
+    display: none;
+}
+
+.game_img_div {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+.game_img_div img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.game_text_div {
+    height: 450px !important;
+    margin-bottom: 0 !important;
+    background-color: #CF0039;
+}
+
+.game_text_div .text_div {
+    height: 450px !important;
+    margin-bottom: 0 !important;
+    color: white;
+}
+
+.content_container:hover .text_div p {
+    color: white;
+}
+
+.game_text_div .text_div h2 {
+    font-family: "Asun";
+}
+
+/* ----------- CONTACT ----------- */
+
+.contact_div {
+	background-color: #008C95;
+	padding: 50px;
+	color: white;
+	margin-bottom: 150px;
+}
+
+.contact_div label {
+	font-family: Aregular;
+	letter-spacing: 1px;
+	font-weight: 100;
+	display: block;
+	vertical-align: top;
+	color: white;
+}
+
+.contact_div input, .contact_div textarea {
+	display: block;
+	font-family: Asun;
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 5px;
+	border: 0;
+    border-radius: 0;
+	color: #008C95;
+}
+
+.contact_div form input:last-of-type {
+	font-family: Aregular;
+	letter-spacing: 1px;
+	font-weight: 100;
+	display: block;
+	width: 25%;
+	margin: 0 auto;
+	padding: 10px;
+    padding-top: 13px;
+	background-color: #008C95;
+	color: white;
+	border: 1px solid white;
+    border-radius: 0;
+	transition: all .5s;
+}
+
+.contact_div form input:last-of-type:hover {
+	background-color: #CF0039;
+	color: white;
+	border: 1px solid white;
+	transition: all .5s;
+}
+
+.contact_page h3 {
+	color: white;
+}
+
+.school_page .page_title {
+	padding-left: 50px;
+}
+
+.school-div {
+	padding: 25px 50px;
+}
+
+.school_container {
+	background-color: #008C95;
+	color: white;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+}
+
+.school_container small, .school_container a {
+	text-decoration: none;
+	color: white;
+}
+
+.school_link {
+	color: white;
+	padding: 15px;
+	border: 1px solid white;
+	margin-top: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: Asmall;
+	transition: all .5s;
+}
+
+.school_link:hover {
+	background-color: #CF0039;
+	transition: all .5s;
+}
+
+/* ----------- CONDITIONAL ----------- */
+
+@media (max-width: 650px) {
+
+	.logo_img {
+		display: none;
+	}
+
+	.nav_elements {
+		width: calc(100% - 25px);
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.nav_div .nav_elements a {
+		padding: 10px;
+        font-size: 0.9em;
+	}
+    
+	video {
+		display: none;
+	}
+
+	.title_container {
+		width: calc(100% - 25px);
+		padding: 20px;
+		margin: 0 12.5px 25px 12.5px;
+	}
+
+	.title_div h1 {
+		font-size: 2.5em;
+		margin-bottom: 5px;
+	}
+
+	.title_div h2 {
+		font-size: 1.3em;
+		letter-spacing: 1px;
+	}
+
+	.content_container:nth-child(odd) {
+		margin-right: 12.5px;
+	}
+
+	.content_container {
+		height: 400px;
+		width: calc(100% - 25px);
+		margin: 0 12.5px 25px 12.5px;
+	}
+
+	.text_div {
+		height: 150px;
+		padding: 20px;
+	}
+
+	.text_div h3 {
+		font-size: 1.2em;
+	}
+
+	/* opleidingen */
+
+	.opleiding_form button {
+		display: block;
+	}
+
+	.school-list .mobile_screen {
+		display: block;
+	}
+
+	.school-list .large_screen {
+		display: none;
+	}
+
+	.school-list tr,
+	.school-list td {
+	    padding: 20px 20px;
+	}
+
+	.refine_search {
+		padding: 20px;
+	}
+
+	.opleiding_form button {
+		width: 100%;
+	}
+
+	/* scholen */
+
+	.page_title {
+		padding-left: 20px;
+	}
+
+	.school-div {
+		padding: 25px 20px;
+	}
+
+	.school-div h3 {
+		margin-top: 0;
+	}
+
+	/* contact */
+
+	.contact_page .page_title {
+		padding-left: 20px;
+	}
+
+	.contact_div {
+		padding: 25px 20px;
+	}
+
+	.contact_form label {
+		font-size: 1em;
+		width: 50%;
+	}
+
+	.contact_form input, .contact_form textarea {
+		width: 100%;
+	}
+
+	.contact_form button {
+		width: 50%;
+	}
+
+	.img_erv {
+		min-height: 150px !important;
+		padding: 0;
+	}
+
+	.img_erv img {
+		height: 150px;
+		width: auto;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.box-masonry-image {
+		height: 300px !important;
+		overflow: hidden !important;
+	}
+
+	.page_title {
+		margin-left: 0 !important;
+        text-align: center;
+        font-size: 2.5em;
+	}
+
+	.cource-box .cource-text {
+		margin-left: 0;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 900px;
+	}
+    
+    .content_container.game_img_div, .content_container.game_text_div {
+        width: calc(32% - 25px);
+    }
+
+    .deletable_div {
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1000px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.container {
+		width: 1200px;
+	}
+}
